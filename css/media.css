@@ -1,0 +1,319 @@
+@media(max-width: 691px){
+    /* *header */
+    .header{
+        padding-bottom: 33px;
+    }
+
+    /* *hero */
+    .hero_container_text{
+        padding-top: 35px;
+        max-width: 330px;
+    }
+    .hero_title{
+        max-width: 270px;
+        margin-bottom: 20px;
+    }
+    .hero_description{
+        margin-bottom: 40px;
+    }
+
+    /* *new collection */
+    .new_collection_background{
+        min-height: 502px;
+        background: url("../images/section-new-collection-image-background-690.png") no-repeat;
+    }
+    .new_collection_block_text .new_collection_section_title{
+        max-width: 450px;
+    }
+    .new_collection_logo_img{
+        width: 60px;
+        height: 60px;
+    }
+    .new_collection_block_text .new_collection_section_title .new_collection_title {
+        font-size: 30px;
+    }
+    .new_collection_block_text{
+        max-width: 690px;
+        margin-bottom: 30px;
+    }
+
+    /* *our team */
+    .our_team_block_text .our_team_description{
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* *footer */
+    .footer_container{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .footer_content_left {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer_content_right{
+        column-gap: 55px;
+        row-gap: 30px;
+    }
+}
+@media(max-width: 511px){
+    .section_page{
+        padding: 50px 0;
+    }
+
+    /* *header */
+    .link_logo{
+        justify-content: center;
+        flex-basis: 100%;
+        border-bottom: 1px solid #c3d1c6;
+        padding-bottom: 22px;
+    }
+    .menu{
+        margin-top: 17px;
+        margin-bottom: 16px;
+    }
+
+      /* *hero */
+      .hero_container_text{
+        padding: 0;
+        max-width: 285px;
+    }
+    .hero_title{
+        max-width: 260px;
+        margin-bottom: 10px;
+    }
+    .hero_description{
+        margin-bottom: 11px;
+    }
+
+    /* *new collection */
+    .new_collection_background{
+        min-height: 480px;
+        background: url("../images/section-new-collection-image-background-510.png") no-repeat;
+        background-size: cover;
+    }
+    .new_collection_container {
+        padding-top: 51px;
+    }
+    .new_collection_block_text .new_collection_section_title{
+        max-width: 331px;
+    }
+    .new_collection_logo_img{
+        width: 50px;
+        height: 50px;
+    }
+    .new_collection_block_text .new_collection_section_title .new_collection_title {
+        font-size: 24px;
+    }
+    .new_collection_block_text{
+        margin-bottom: 20px;
+    }
+    .new_collection_block_text .new_collection_descripion_1{
+        margin-bottom: 28px;
+    }
+
+     /* *our team */
+     .our_team_block_text .our_team_description{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    /* *footer */
+    .link_logo_footer{
+        flex-basis: auto;
+        padding: 0;
+        border: none;
+    }
+    .footer_content_right{
+        justify-content: center;
+    }
+    .footer_menu_container{
+        border-bottom: 1px solid #c3d1c6;
+        padding-bottom: 16px;
+    }
+    .social{
+        justify-content: center;
+    }
+    .copywriting{
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 502px){
+    /* *header */
+    .header{
+        background-color: transparent;
+        padding: 0;
+    }
+    .nav{
+        display: none;
+    }
+    .nav_mobile{
+        display: block;
+    }
+    .nav_monile_logo{
+        display: flex;
+        padding-top: 17px;
+        margin-bottom: 16px;
+    }
+    .link_logo{
+        border: none;
+        padding: 0;
+    }
+    .menu_burger_backround{
+        background-color: #E1EDE6;
+    }
+    .menu_burger_container{
+        min-height: 61px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+     /* *burger menu */
+    .burger_menu_button{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .burger_menu_icon_container{
+        position: relative;
+        width: 20.625px;
+        height: 16.875px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .burger_menu_icon{
+        display: block;
+        width: 20.625px;
+        height: 2px;
+        background-color: #4c5866;
+        transition: background-color 300ms ease-in;
+    }
+    .burger_menu_icon::before,
+    .burger_menu_icon::after{
+        content: "";
+        display: block;
+        width: 20.625px;
+        height: 2px;
+        background-color: #4c5866;
+        position: absolute;
+        transition: background-color 300ms ease-in;
+    }
+    .burger_menu_icon::before{
+        top: 0px;
+    }
+    .burger_menu_icon::after{
+        bottom:  0px;
+    }
+    .burger_menu_icon.burger_menu_icon_active{
+        background-color: transparent;    
+    }
+    .burger_menu_icon.burger_menu_icon_active::before{
+        background-color: #2c2d35;
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+    .burger_menu_icon.burger_menu_icon_active::after{
+        background-color: #2c2d35;
+        transform: rotate(45deg);
+        bottom: 36%;
+    }
+
+    /* *menu mobile */
+    .menu_mobile{
+        min-height: 367px;
+        background-color: #E1EDE6;
+        margin-top: -500px;
+        transition: margin 300ms ease-in;
+    }
+    .menu_mobile_open{
+        margin-top: 0;
+    }
+    .menu{
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 50px;
+        padding-top: 30px;
+    }
+
+    /* *hero */
+    .hero{
+        padding-top: 60px;
+    }
+    .hero_container_text{
+        padding-top: 35px;
+        max-width: 420px;
+    }
+    .hero_title{
+        max-width: 270px;
+        margin-bottom: 20px;
+    }
+    .hero_description{
+        margin-bottom: 40px;
+    }
+    .image_container{
+        display: none;
+    }
+
+    /* *reproductions */
+    .card {
+        max-width: 290px;
+        margin: 0 auto;
+    }
+    .card .image_painting{
+        max-width: 90%;
+    }
+
+    /* *new collection */
+    .new_collection_background{
+        min-height: 602px;
+        background: url("../images/section-new-collection-image-background-mobile.jpg") no-repeat;
+        background-size: cover;
+    }
+    .new_collection_container {
+        padding-top: 50px;
+    }
+    .new_collection_block_text .new_collection_section_title{
+        max-width: 290px;
+    }
+    .new_collection_block_text .new_collection_section_title .new_collection_title {
+        font-size: 24px;
+    }
+    .new_collection_block_text{
+        margin-bottom: 20px;
+    }
+    .new_collection_block_text .new_collection_descripion_1{
+        margin-bottom: 30px;
+    }
+    .new_collection_button{
+        width: 100%;
+    }
+
+    /* *our team */
+    .our_team{
+        padding-bottom: 94px;
+    }
+    .our_team_container{
+        row-gap: 50px;
+    }
+    .users_avatar{
+        column-gap: 25px;
+    }
+
+    /* *footer */
+    .footer_content_left{
+        justify-content: start;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .link_logo_footer{
+        justify-content: start;
+    }
+    .footer_menu_container{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
